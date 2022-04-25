@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* 兼容写法 */
+li {
+  list-style: none;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+/* 内容 */
+.main_container {
+  margin-bottom: 30px;
+  /* 左侧导航 */
+  /* 右侧内容 */
+}
+
+.main_container .row {
+  position: relative;
+}
+
+.main_container .left-line {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  border-left: 1px solid #c1c1c1;
+}
+
+.main_container .sidebar .left-active-sub {
+  color: #0ba1e4 !important;
+}
+
+.main_container .sidebar .sidebar_content {
+  /* 第一级  ul */
+}
+
+.main_container .sidebar .sidebar_content ul {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
+.main_container .sidebar .sidebar_content ul li a {
+  display: block;
+  width: 100%;
+  padding-left: 1em;
+  line-height: 28px;
+  height: 28px;
+  color: #616161;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.main_container .sidebar .sidebar_content ul li a:hover {
+  color: #0ba1e4;
+}
+
+.main_container .sidebar .sidebar_content ul li .left-anchor {
+  display: none;
+}
+
+.main_container .sidebar .sidebar_content ul li .left-anchor .left-active-sub {
+  color: #0ba1e4;
+}
+
+.main_container .sidebar .sidebar_content ul li .left-anchor li > a:hover {
+  color: #0ba1e4;
+}
+
+.main_container .sidebar .sidebar_content ul li.active .left-anchor {
+  display: block;
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box {
+  padding: 0;
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box > li {
+  height: 28px;
+  overflow: hidden;
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box > li > a {
+  color: #0ba1e4;
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box > li > a.left-active {
+  background-color: rgba(194, 214, 229, 0.6);
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box > li > a:hover {
+  background: rgba(194, 214, 229, 0.6);
+}
+
+.main_container .sidebar .sidebar_content .sidebar_box > li.active {
+  height: auto !important;
+  overflow: hidden;
+}
+
+.main_container .second {
+  display: none;
+}
+
+.main_container .second .usinfo-article {
+  display: none;
+}
+
+.main_container .second .usinfo-article .article-title {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.main_container .second .usinfo-article .article-title .h2 {
+  margin: 0;
+  line-height: 2;
+}
+
+.main_container .second .usinfo-article .article-title .h2 small {
+  float: right;
+  line-height: 4;
+}
+
+.main_container .second .usinfo-article .article-content h3 {
+  color: #0ba1e4;
+  border-top: 1px solid #c1c1c1;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.main_container .second .usinfo-article .article-content h3:first-child {
+  border: 0;
+}
+
+.main_container .second .usinfo-article .article-content p {
+  text-indent: 2em;
+  line-height: 2;
+}
+
+.main_container .second .usinfo-article .article-content p span {
+  color: red;
+}
+
+.main_container .second .usinfo-article .article-content li {
+  line-height: 2;
+  list-style: circle;
+}
+
+.main_container .second .usinfo-article.active {
+  display: block;
+}
+
+.main_container .second .usinfo-article.usinfo-article-second {
+  display: block;
+}
+
+.main_container .second.active {
+  display: block;
+}
+
+/* 移动端兼容代码 */
+@media (max-width: 767px) {
+  .main_container #sidebar {
+    display: none;
+    position: fixed !important;
+    z-index: 1091;
+    top: 0 !important;
+    left: 0 !important;
+    width: 270px !important;
+    height: 100% !important;
+    background-color: #333 !important;
+    overflow-y: scroll !important;
+  }
+  .main_container .sidebar .sidebar_content .sidebar_box > li > a.left-active {
+    color: #ccc;
+    background-color: rgba(194, 214, 229, 0);
+  }
+  .main_container .sidebar .sidebar_content ul li a {
+    text-indent: 1em;
+    padding-left: 0 !important;
+    height: 43px !important;
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.3) !important;
+    color: #ccc;
+  }
+  .main_container #sidebar-content ul li {
+    padding-left: 0;
+  }
+  .main_container .sidebar .sidebar_content ul {
+    padding-left: 0;
+  }
+  .sidebar_box > li > ul > li > a {
+    text-indent: 3em !important;
+  }
+  .sidebar_box > li > ul > li > ul > li > a {
+    text-indent: 5em !important;
+  }
+  .main_container .sidebar .sidebar_content .sidebar_box > li > a {
+    color: #ccc !important;
+  }
+  .main_container .sidebar .sidebar_content .sidebar_box > li {
+    height: 43px !important;
+  }
+}
+/*# sourceMappingURL=guide.css.map */

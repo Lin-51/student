@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body {
+  background: #f8f8f8;
+}
+
+/* 兼容写法 */
+/* 内容区域 */
+.main_container {
+  margin: 0 0 30px 0;
+}
+
+.main_container .main-container-row {
+  position: relative;
+}
+
+.main_container .service_module {
+  padding-left: 144px;
+  height: 164px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.main_container .service_module.process {
+  background: url(../img/process.png) no-repeat;
+}
+
+.main_container .service_module.ambitus {
+  background: url(../img/outside.png) no-repeat;
+}
+
+.main_container .service_module.alljour {
+  background: url(../img/alljour.png) no-repeat;
+}
+
+.main_container .service_module .title {
+  color: #333;
+}
+
+.main_container .service_module .title h3 {
+  margin: 0;
+  line-height: 1.5em;
+  border-bottom: 1px dashed #c1c1c1;
+  margin-bottom: 10px;
+}
+
+.main_container .service_module .title:hover {
+  color: #0ba1e4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main_container .service_module p {
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.main_container .service_module p > span {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+.main_container .service_module p .start {
+  color: #ddd;
+}
+
+.main_container .service_module p .start i {
+  color: #f90;
+  font-style: normal;
+}
+
+.main_container .service_module .btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #f93;
+  border-color: #f93;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_container .service_module .btn:hover {
+  background: #f93;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_container .right_line {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 25%;
+  height: 100%;
+  border-left: 1px solid #c1c1c1;
+}
+
+@media (max-width: 767px) {
+  .main_container .service_box {
+    padding-top: 10px !important;
+  }
+  .main_container .service_box .service_module {
+    height: 82px;
+    padding-left: 72px;
+    position: relative;
+    overflow: hidden;
+    background-size: 62px 82px;
+  }
+  .main_container .service_box .service_module h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .main_container .service_box .service_module p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .main_container .service_box .service_module p > span {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=service.css.map */

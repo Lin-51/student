@@ -1,0 +1,122 @@
+@charset "UTF-8";
+p.line {
+  width: 80px;
+  height: 2px;
+  background: #0ba1e4;
+  margin-top: 10px;
+}
+
+/* 加急 */
+.urgent {
+  background: #f8fbff;
+}
+
+.urgent.right {
+  background: #fff;
+  text-align: right;
+}
+
+.urgent.right p {
+  float: right;
+}
+
+.urgent h2 {
+  margin-top: 60px;
+  color: #0ba1e4;
+}
+
+.urgent p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #919191;
+}
+
+.urgent img {
+  display: block;
+  max-width: 100%;
+}
+
+/* 流程 */
+.u_process {
+  background: #0ba1e4;
+  padding: 25px 0;
+}
+
+.u_process h3 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 加急流程 */
+.urgent_process {
+  background: url(../img/urgent_chat.jpg) no-repeat;
+  background-position: center top;
+}
+
+.urgent_process p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #919191;
+}
+
+.urgent_process ol {
+  margin: 20px 0;
+}
+
+.urgent_process ol li {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.urgent_process a {
+  width: 120px;
+}
+
+.urgent_process .qqbtn {
+  color: #000;
+  background: #fff;
+}
+
+.urgent_process .qqbtn:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+@media (max-width: 767px) {
+  .urgent h2 {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+  .urgent p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #919191;
+  }
+  .u_process h3 {
+    font-size: 12px;
+  }
+  /* 加急流程 */
+  .urgent_process {
+    background-position: -600px -80px;
+  }
+  .urgent_process.pad50 {
+    padding: 20px 0;
+  }
+  .urgent_process p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #919191;
+  }
+  .urgent_process ol li {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=urgent.css.map */

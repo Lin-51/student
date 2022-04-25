@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* 我们的成绩 */
+.result .col-sm-3 {
+  text-align: center;
+}
+
+.result .col-sm-3 .num_wrap {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-size: 70px;
+  line-height: 1.5em;
+  color: #0ba1e4;
+}
+
+.result .col-sm-3 .title {
+  color: #919191;
+}
+
+/* 我们的优势 */
+.goodness {
+  background: #e1e1e1;
+}
+
+.goodness .goodness_module {
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.goodness .goodness_module span {
+  color: #0ba1e4;
+  font-size: 80px;
+}
+
+.goodness .goodness_module span, .goodness .goodness_module h3, .goodness .goodness_module p {
+  line-height: 1.5;
+}
+
+.goodness .goodness_module:hover {
+  background: #0ba1e4;
+  border: 1px solid #0ba1e4;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 0 20px 0 rgba(45, 183, 245, 0.5);
+  -o-box-shadow: 0 0 20px 0 rgba(45, 183, 245, 0.5);
+  -ms-box-shadow: 0 0 20px 0 rgba(45, 183, 245, 0.5);
+  box-shadow: 0 0 20px 0 rgba(45, 183, 245, 0.5);
+}
+
+.goodness .goodness_module:hover span {
+  color: #ffffff;
+}
+
+/* 我们的服务 */
+.service .card_item {
+  padding: 20px 0 60px;
+}
+
+.service .card_module {
+  background: #fafafa;
+  border: 1px solid #c1c1c1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 0;
+}
+
+.service .card_module .card_title {
+  padding: 20px 0;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.service .card_module .card_title h4 {
+  color: #0ba1e4;
+  font-weight: bold;
+}
+
+.service .card_module .card_title h4, .service .card_module .card_title p {
+  margin: 0;
+  line-height: 2em;
+}
+
+.service .card_module .card_content {
+  padding: 20px 0 30px;
+}
+
+.service .card_module .card_content p {
+  line-height: 3em;
+}
+
+.service .card_module .card_content a {
+  color: #0ba1e4;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: transparent;
+  border-color: #0ba1e4;
+}
+
+.service .card_module.scale {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px 0 #2db7f5;
+  -o-box-shadow: 0 0 20px 0 #2db7f5;
+  -ms-box-shadow: 0 0 20px 0 #2db7f5;
+  box-shadow: 0 0 20px 0 #2db7f5;
+}
+
+.service .card_module.active {
+  background: #0ba1e4;
+  border-color: #0ba1e4;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 11;
+}
+
+.service .card_module.active .card_title {
+  color: #ffffff;
+}
+
+.service .card_module.active .card_title h4 {
+  color: #ffffff;
+}
+
+.service .card_module.active .card_content {
+  color: #ffffff;
+}
+
+.service .card_module.active a {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.service .more_service a {
+  color: #0ba1e4;
+  background: transparent;
+  border-color: #0ba1e4;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.service .more_service a:hover {
+  color: #ffffff;
+  background: #0ba1e4;
+  border-color: #0ba1e4;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .service .row {
+    margin: 0;
+  }
+  .service .row .scale {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* 美国签证最新资讯 */
+.consult {
+  background: #ffffff;
+}
+
+.consult .consult_box {
+  padding: 0;
+}
+
+.consult .more_consult {
+  margin: auto;
+}
+
+.consult .more_consult:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */
